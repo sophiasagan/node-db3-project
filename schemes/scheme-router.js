@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
   .catch(err => {
     res.status(500).json({ message: 'Failed to get schemes' });
   });
-});
+});//working
 
 router.get('/:id', (req, res) => {
   const { id } = req.params;
@@ -28,7 +28,7 @@ router.get('/:id', (req, res) => {
   .catch(err => {
     res.status(500).json({ message: 'Failed to get schemes' });
   });
-});
+});//working
 
 router.get('/:id/steps', (req, res) => {
   const { id } = req.params;
@@ -44,7 +44,7 @@ router.get('/:id/steps', (req, res) => {
   .catch(err => {
     res.status(500).json({ message: 'Failed to get steps' });
   });
-});
+});//working
 
 router.post('/', (req, res) => {
   const schemeData = req.body;
